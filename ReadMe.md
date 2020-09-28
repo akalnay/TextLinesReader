@@ -1,5 +1,5 @@
-# ReadLines&lt;T>() #
-`ReadLines<T>()` is a collection of [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/introduction) method overloads dedicated to reading lines of text from a source and returning a sequence of strongly typed instances of a generic type.  The `ReadLines<T>()` methods provide functionality, testability, and configurability that goes beyond what the equivalent .NET alternatives provide.
+# TextLinesReader #
+TextLinesReader hosts `ReadLines<T>()`, a collection of [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/introduction) method overloads dedicated to reading lines of text from a source and returning a sequence of strongly typed instances of a generic type.  The `ReadLines<T>()` methods provide functionality, testability, and configurability that goes beyond what the equivalent .NET alternatives provide.
 
 The `.NET Framework` provides several options for reading text and returning a sequence of lines:  There is for example, [System.IO.File.ReadLines(string)](https://docs.microsoft.com/en-us/dotnet/api/system.io.file.readlines?view=netcore-3.1) and its cousin [System.IO.File.ReadAllLines(string)](https://docs.microsoft.com/en-us/dotnet/api/system.io.file.readalllines?view=netcore-3.1).  Both of those two methods return a sequence of strings, where they differ is in that `ReadAllLines()` needs to read the entire input file before returning a value, while `ReadLines()` allows the user to start enumerating the results right away.
 
