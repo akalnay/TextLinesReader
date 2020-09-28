@@ -12,7 +12,7 @@ using System.Text;
 
 namespace TextLinesReader.Tests
 {
-    public abstract class ReadLines_TestsBase
+    internal abstract class ReadLines_TestsBase
     {
         private class Person : IEquatable<Person>
         {
@@ -113,7 +113,7 @@ namespace TextLinesReader.Tests
 
     [TestFixture]
     [Category("ReadLinesUtils - ReadLines")]
-    public sealed class ReadLines_Tests : ReadLines_TestsBase
+    internal sealed class ReadLines_Tests : ReadLines_TestsBase
     {
         #region Happy Path Tests
 
